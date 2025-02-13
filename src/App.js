@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Button from '@mui/material/Button';
 import { MessageComp, MessageComps, StateCounter, Toggle } from './components/messagecomps';
-import { Greeting } from './components/messagecomps';
+import { Greeting, ConRen } from './components/messagecomps';
 
 function App() {
   return (
@@ -12,7 +12,8 @@ function App() {
       <StateCounter></StateCounter>
       <Toggle></Toggle>
       <br></br><Button variant="text">Text</Button>
-      <Greeting isLoggedIn={true}> </Greeting>
+      <Greeting isLoggedIn={false}> </Greeting>
+      <ConRen/>
     </div>
   );
 }
