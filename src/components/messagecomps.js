@@ -41,3 +41,12 @@ export function StateCounter() {
         </button>
       );
     }
+
+    export function Greeting({isLoggedIn}){
+        if(isLoggedIn){
+            return <h1> welcome back glitch </h1>;
+        }else{
+            return <h1>please sign up </h1>;
+        }
+        }
+
